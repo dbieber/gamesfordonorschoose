@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return render_template('base.html', title="Default title!", content="Default content!")
+    return render_template('temp.html', title="Default title!")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

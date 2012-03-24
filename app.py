@@ -1,5 +1,6 @@
 import os
 import featuredProj
+import kitty
 from flask import Flask
 from flask import render_template
 app = Flask(__name__)
@@ -7,7 +8,8 @@ id = 774437
 @app.route("/")
 def hello():
     url = featuredProj.parse(id)
-    return render_template('temp.html', title="Default title!", imageURL=url)
+    kittyurl =  kitty.getRandom()
+    return render_template('index.html', title="Kitties for Kiddies!", imageURL=url, kittyURL = kittyurl)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

@@ -57,7 +57,7 @@ sub {
   bottom: -0.25em;
 }
 img {
-  height: auto;
+  max-height:300px;
   border: 0;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
@@ -3953,7 +3953,7 @@ a.thumbnail:hover {
   color: #ffffff;
 }
 .hero-unit {
-  padding: 60px;
+  padding: 30px;
   margin-bottom: 30px;
   background-color: #eeeeee;
   -webkit-border-radius: 6px;

@@ -5,6 +5,11 @@ from flask import Flask
 from flask import render_template
 app = Flask(__name__)
 id = 774437
+
+@app.route("/googlef34ca2b18ef9d5d0.html")
+def googleVerificationPage():
+    return render_template('googlef34ca2b18ef9d5d0.html')
+
 @app.route("/")
 def hello():
     url = featuredProj.parse(id)

@@ -1,10 +1,18 @@
 import os
 import threeProjs
 import kitty
+
 from flask import Flask
 from flask import render_template
+from flask import send_from_directory
+
 app = Flask(__name__)
 id = 774437
+
+@app.route("/favicon.ico")
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @app.route("/googlef34ca2b18ef9d5d0.html")
 def googleVerificationPage():

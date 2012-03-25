@@ -1,6 +1,6 @@
 import random, urllib2, xml.parsers.expat
 from xml.dom.minidom import parseString
-url = " http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=aa617e7f9009c45c38bbaa4f7fe50329&tags=kitten&safe_search=1&format=rest"
+url = "http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=aa617e7f9009c45c38bbaa4f7fe50329&tags=kitten&safe_search=1&format=rest"
 urltemplate = "http://farm%s.staticflickr.com/%s/%s_%s.jpg"
 
 def getRandom():
@@ -14,7 +14,7 @@ def getRandom():
     newurl = url + "&page=" + str(random.randint(0,int(pages)-1))
     print newurl
 
-    file2 = urllib2.urlopen(url)
+    file2 = urllib2.urlopen(newurl)
     dom = parseString(file2.read())
 
     ourphoto = dom.getElementsByTagName('photo')[kittyID]

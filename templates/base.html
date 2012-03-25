@@ -7,7 +7,7 @@
     <link href="static/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
-        padding-top: 60px;
+        padding-top: 10px;
         padding-bottom: 40px;
       }
     </style>
@@ -15,8 +15,6 @@
 
   </head>
   <body>
-    {% include 'navigation.html' %}
-
     <div class="container">
       {% block content %}{{ content }}{% endblock %}
     </div> <!-- /container -->

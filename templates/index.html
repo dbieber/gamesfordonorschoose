@@ -2,24 +2,33 @@
 {% block content %}
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Refresh for another kitty!</h1>
-	<img src ="{{kittyURL}}" align=left style="padding:25px">
-        <h2>See kitties. Help kiddies.</h2><p>When you view this page, you see a cute kitty. You'll also see ads! We take the money from those ads and donate it to a classroom in need on DonorsChoose.org. Want to donate on your own? Click through to <a href="http://donorschoose.org">DonorsChoose.org</a> if you want to pick your own classroom to help out!</p>
-	<p>Blah</p><br><br>
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-7297158241250929";
-/* test3 */
-google_ad_slot = "0869302522";
-google_ad_width = 234;
-google_ad_height = 60;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-        <p><a class="btn btn-primary btn-large" href="http://donorschoose.org">DonorsChoose &raquo;</a></p>
+        <h1>See kitties. Help kiddies.</h1>
+        <p>When you view this page, you see a cute kitty. You'll also see ads! We take the money from those ads and donate it to a classroom in need on DonorsChoose.org. Want to donate on your own? Click through to <a href="http://donorschoose.org">DonorsChoose.org</a> if you want to pick your own classroom to help out!</p>
+</div>      
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>Kitty!</h2>
+	  <p><img src ="{{kittyURL}}"></p>
+        </div>
+        <div class="span4">
+          <h2><a href="{{url1}}">{{title1}}</a></h2>
+                     <img src="static/DonorsChoose-org-logo.jpg"><br>
+          <img class=classimg src="{{img1}}" align=left>
+           <p>{{desc1}}</p>
+          <p><a class="btn" href="{{url1}}">Help us! &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <a href="{{url2}}"><h2>{{title2}}</h2></a>
+                     <img src="static/DonorsChoose-org-logo.jpg">
+<br>
+        <img class = classimg src="{{img2}}" align=left>
+          <p>{{desc2}}</p>
+          <p><a class="btn" href="{{url2}}">Help us! &raquo;</a></p>
+        </div>
       </div>
-<script type="text/javascript"><!--
+      <script type="text/javascript"><!--
 google_ad_client = "ca-pub-7297158241250929";
 /* long */
 google_ad_slot = "8833087857";
@@ -30,25 +39,6 @@ google_ad_height = 90;
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Featured Classroom</h2>
-	  <img float="left" src="{{imageURL}}" height=150px width=150px>
-	  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
 
       <hr>
 

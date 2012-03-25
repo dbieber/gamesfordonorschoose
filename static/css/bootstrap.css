@@ -58,9 +58,15 @@ sub {
 }
 img {
   max-height:300px;
+  max-width:300px;
   border: 0;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
+}
+img.classimg {
+	padding:10px;
+	max-height:150px;
+	max-width:150px;
 }
 button,
 input,
